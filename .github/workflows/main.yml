@@ -17,11 +17,17 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.81.0'
+          hugo-version: 'latest'
           extended: true
+          
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
 
-      - name: Build
-        run: hugo --minify
+      #- name: Build
+      - run: npm ci
+      - run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
