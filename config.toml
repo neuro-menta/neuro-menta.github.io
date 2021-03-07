@@ -1,4 +1,4 @@
-baseURL                          = "www.neuromenta.com/"   # Your domain name. Must end with "/"
+baseURL                          = "http://neuromenta.com/"   # Your domain name. Must end with "/"
 theme                            = "introduction"
 DefaultContentLanguage           = "es"                    # Default language for multilingual sites
 # disqusshortname                 = ""                     # https://gohugo.io/content-management/comments
